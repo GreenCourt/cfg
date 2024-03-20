@@ -1,10 +1,3 @@
-if !exists("g:colors_name")
-  highlight DiffAdd ctermfg=white
-  highlight DiffDelete ctermfg=white
-  highlight DiffChange ctermfg=white
-  highlight DiffText ctermfg=white
-endif
-
 let s:tmux = &term =~ "tmux" || !empty($TMUX)
 let s:prefix = s:tmux ? "\ePtmux;\e" : ""
 let s:suffix = s:tmux ? "\e\\" : ""
